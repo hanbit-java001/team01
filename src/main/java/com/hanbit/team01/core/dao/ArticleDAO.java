@@ -1,6 +1,8 @@
 package com.hanbit.team01.core.dao;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
@@ -19,28 +21,36 @@ public class ArticleDAO {
 	private SqlSession sqlSession;
 
 	public int insertArticle(ArticleVO article) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = sqlSession.insert("article.insertArticle", article);
+
+		return result;
 	}
 
 	public int updateArticle(ArticleVO article) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = sqlSession.update("article.updateArticle", article);
+
+		return result;
 	}
 
 	public int deleteArticle(String articleId) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = sqlSession.delete("article.deleteArticle", articleId);
+
+		return result;
 	}
 
 	public List<ArticleVO> selectArticles(String createDt) {
-		// TODO Auto-generated method stub
-		return null;
+		Map params = new HashMap();
+		params.put("createDt", createDt);
+
+		List<ArticleVO> result = sqlSession.selectList("article.selectArticles",params);
+
+		return result;
 	}
 
 	public ArticleVO selectArticle(String articleId) {
-		// TODO Auto-generated method stub
-		return null;
+		ArticleVO article = sqlSession.selectOne("article.selectArticle",articleId);
+
+		return article;
 	}
 
 
