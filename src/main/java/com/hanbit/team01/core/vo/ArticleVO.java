@@ -2,18 +2,17 @@ package com.hanbit.team01.core.vo;
 
 public class ArticleVO {
 
-	private String aticleId;
+	private String articleId;
 	private String title;
 	private String contents;
 	private String createDt;
 	private String updateDt;
-	private String todayDt;
 
 	public String getAticleId() {
-		return aticleId;
+		return articleId;
 	}
 	public void setAticleId(String aticleId) {
-		this.aticleId = aticleId;
+		this.articleId = aticleId;
 	}
 	public String getTitle() {
 		return title;
@@ -39,13 +38,5 @@ public class ArticleVO {
 	public void setUpdateDt(String updateDt) {
 		this.updateDt = updateDt;
 	}
-	public String getTodayDt() {
-		return todayDt;
-	}
-	public void setTodayDt(String todayDt) {
-		this.todayDt = todayDt;
-	}
-
-
 
 }

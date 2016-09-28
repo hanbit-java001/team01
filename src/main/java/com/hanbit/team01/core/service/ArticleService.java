@@ -33,9 +33,9 @@ public class ArticleService {
 		return articleDAO.deleteArticle(articleId);
 	}
 
-	public List<ArticleVO> listArticles(String createDt, String todayDt){
+	public List<ArticleVO> listArticles(String createDt){
 
-		return articleDAO.selectArticles(createDt, todayDt);
+		return articleDAO.selectArticles(createDt);
 	}
 
 	public ArticleVO getArticle(String articleId){
