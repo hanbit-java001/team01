@@ -12,35 +12,36 @@ import com.hanbit.team01.core.vo.ArticleVO;
 
 @Service
 public class ArticleService {
-	
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(ArticleService.class);
-	
+
 	@Autowired
 	private ArticleDAO articleDAO;
-	
+
 	public int addAticle(ArticleVO article){
-	
+
 		return articleDAO.insertArticle(article);
 	}
-	
+
 	public int modifyArticle(ArticleVO article){
-		
+
 		return articleDAO.updateArticle(article);
 	}
-	
+
 	public int removeArticle(String articleId){
-		
+
 		return articleDAO.deleteArticle(articleId);
 	}
-	
-	public List<ArticleVO> listArticles(String createDt){
-		return articleDAO.selectArticles(createDt);
+
+	public List<ArticleVO> listArticles(String createDt, String todayDt){
+
+		return articleDAO.selectArticles(createDt, todayDt);
 	}
-	
+
 	public ArticleVO getArticle(String articleId){
 		return articleDAO.selectArticle(articleId);
 	}
-	
-	
-	
+
+
+
 }

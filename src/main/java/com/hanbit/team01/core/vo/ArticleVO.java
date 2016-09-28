@@ -7,6 +7,8 @@ public class ArticleVO {
 	private String contents;
 	private String createDt;
 	private String updateDt;
+	private String todayDt;
+
 	public String getAticleId() {
 		return aticleId;
 	}
@@ -36,6 +38,12 @@ public class ArticleVO {
 	}
 	public void setUpdateDt(String updateDt) {
 		this.updateDt = updateDt;
+	}
+	public String getTodayDt() {
+		return todayDt;
+	}
+	public void setTodayDt(String todayDt) {
+		this.todayDt = todayDt;
 	}
 
 

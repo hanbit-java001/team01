@@ -38,9 +38,10 @@ public class ArticleDAO {
 		return result;
 	}
 
-	public List<ArticleVO> selectArticles(String createDt) {
+	public List<ArticleVO> selectArticles(String createDt, String todayDt) {
 		Map params = new HashMap();
 		params.put("createDt", createDt);
+		params.put("todayDt", todayDt);
 
 		List<ArticleVO> result = sqlSession.selectList("article.selectArticles",params);
 
