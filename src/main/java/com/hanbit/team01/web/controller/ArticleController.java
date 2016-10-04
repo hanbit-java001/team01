@@ -22,13 +22,4 @@ public class ArticleController {
 		return "article/index";
 	}
 
-	@RequestMapping("article/index2")
-	public String list2(){
-
-		return "article/index2";
-	}
-
-
-
-
 }
