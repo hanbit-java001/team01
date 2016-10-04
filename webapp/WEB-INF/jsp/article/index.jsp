@@ -6,8 +6,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hover Effect Ideas | Set 1</title>
-		<meta name="description" content="Hover Effect Ideas: Inspiration for subtle hover effects" />
+		<title>Blog Ideas | Set 1</title>
+		<meta name="description" content="Blog Ideas: Inspiration for subtle hover effects" />
 		<meta name="keywords" content="hover effect, inspiration, grid, thumbnail, transition, subtle, web design" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="/static/img/ico_checkmal.ico">
@@ -27,7 +27,7 @@
 				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19292"><span>Back to the Codrops Article</span></a></span>
 			</div>
 			<header class="codrops-header">
-				<h1>Hover Effect Ideas <span>An inspirational collection of subtle hover effects</span></h1>
+				<h1>Blog Ideas <span>An inspirational collection of subtle hover effects</span></h1>
 				<nav class="codrops-demos">
 					<a class="current-demo" href="index">Set 1</a>
 					<a href="index2">Set 2</a>
