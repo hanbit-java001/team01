@@ -1,1 +1,19 @@
-@CHARSET "UTF-8";
+.bottom-buttons{
+	text-align: center;
+}
+
+.hanbit-container{
+	padding: 5%;
+}
+
+.upload-top{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	font-size: xx-large;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -16,10 +16,18 @@ public class ArticleController {
 	@Autowired
 	private ArticleService articleService;
 
-	@RequestMapping("article/index")
-	public String list(){
+	@RequestMapping("upload/uploadForm")
+	public String UploadForm(){
 
-		return "article/index";
+		return "upload/uploadForm";
+	}
+	@RequestMapping("article/main")
+	public String mainView(){
+		return "article/main";
+	}
+	@RequestMapping("article/list")
+	public String contentsList(){
+		return "article/list";
 	}
 
 }

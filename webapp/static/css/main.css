@@ -1,0 +1,48 @@
+body {
+      position: relative;
+  }
+  .affix {
+      top: 20px;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+  #y2016 {color: #fff; background-color: #1E88E5;}
+  #y2015 {color: #fff; background-color: #673ab7;}
+  #y2014 {color: #fff; background-color: #ff9800;}
+  #y2013 {color: #fff; background-color: #00bcd4;}
+  #y2012 {color: #fff; background-color: #1E88E5;}
+  #y2011 {color: #fff; background-color: #673ab7;}
+  #y2010 {color: #fff; background-color: #ff9800;}
+
+  @media screen and (max-width: 810px) {
+    #y2016, #y2015, #y2014, #y2013, #y2012, #y2011, #y2010  {
+        margin-left: 150px;
+    }
+  }
+.top-text{
+	font-size: 70px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-weight: bold;
+}
+.footer-text{
+	text-align: center;
+	height: 120px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+.nav{
+	font-size: 30px;
+}
+.yearDetailFont{
+	font-size: 70px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
