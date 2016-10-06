@@ -18,7 +18,7 @@ public class ArticleService {
 	@Autowired
 	private ArticleDAO articleDAO;
 
-	public int addAticle(ArticleVO article){
+	public int addArticle(ArticleVO article){
 
 		return articleDAO.insertArticle(article);
 	}

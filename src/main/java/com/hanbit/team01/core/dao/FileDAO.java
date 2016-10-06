@@ -1,0 +1,24 @@
+package com.hanbit.team01.core.dao;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hanbit.team01.core.vo.FileVO;
+
+public class FileDAO {
+	@Autowired
+	private SqlSession sqlSession;
+
+	public int insertFile(FileVO file) {
+		return sqlSession.insert("file.insertFile", file);
+	}
+
+	public FileVO selectFile(String fileId) {
+		return sqlSession.selectOne("file.selectFile", fileId);
+	}
+
+	public int deleteFile(String fileId) {
+		return sqlSession.delete("file.deleteFile", fileId);
+	}
+
+}
