@@ -7,4 +7,10 @@
 		<setting name="mapUnderscoreToCamelCase" value="true" />
 	</settings>
 
+	<typeAliases>
+		<typeAlias type="com.hanbit.team01.core.vo.ArticleVO" alias="ArticleVO" />
+		<typeAlias type="com.hanbit.team01.core.vo.FileVO" alias="FileVO" />
+	</typeAliases>
+
+
 </configuration>
