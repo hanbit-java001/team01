@@ -49,8 +49,7 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
-<div class="container-fluid" style="background-color:#283593
-;color:#fff;height:220px;">
+<div class="container-fluid" style="background-image:url('/static/img/31.jpg');background-repeat:round;color:#fff;height:220px;">
   <div class="top-text">Blog Idea</div>
 </div>
 <br>
@@ -68,7 +67,7 @@
     </nav>
     <div class="col-sm-9">
       <div class="yearDetailFont" id="y2016">
-      <table width=850 height=250 background="/static/img/20.jpg">
+      <table class="img" width=850 height=250 background="/static/img/11.jpg">
         <tr>
         <td>
         2016<br>
