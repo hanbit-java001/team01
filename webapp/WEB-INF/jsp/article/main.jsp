@@ -68,15 +68,14 @@
     </nav>
     <div class="col-sm-9">
       <div class="yearDetailFont" id="y2016">
-      <figure>
-      	<img alt="img20" src="/static/img/20.jpg" width="300" height="200">
-		<figcaption>
-		<div>
-        <h1>2016</h1>
-        <em>상세보기</em>
-        </div>
-        </figcaption>
-      </figure>
+      <table width=850 height=250 background="/static/img/20.jpg">
+        <tr>
+        <td>
+        2016<br>
+          상세보기
+        </td>
+        </tr>
+        </table>
       </div>
       <div class="yearDetailFont" id="y2015">
         <h1>2015</h1>
