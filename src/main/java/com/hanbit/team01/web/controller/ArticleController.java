@@ -1,5 +1,6 @@
 package com.hanbit.team01.web.controller;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -14,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.hanbit.team01.core.service.ArticleService;
+import com.hanbit.team01.core.service.FileService;
 import com.hanbit.team01.core.vo.FileVO;
 
 @Controller
@@ -24,11 +26,15 @@ public class ArticleController {
 	@Autowired
 	private ArticleService articleService;
 
+	@Autowired
+	private FileService fileService;
+
 	@RequestMapping("upload/uploadForm")
 	public String UploadForm(){
 
 		return "upload/uploadForm";
 	}
+
 	@RequestMapping("article/main")
 	public String mainView(){
 		return "article/main";
@@ -62,11 +68,11 @@ public class ArticleController {
 
 			fileId = fileService.storeFile(fileVO);
 
-
 		}
+		Map result = new HashMap();
+		result.put("title", title);
 
-
-		return null;
+		return result;
 	}
 
 }
