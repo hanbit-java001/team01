@@ -18,10 +18,21 @@ public class ArticleService {
 	@Autowired
 	private ArticleDAO articleDAO;
 
-	public int addArticle(ArticleVO article){
 
-		return articleDAO.insertArticle(article);
+
+	public String addArticle(ArticleVO article){
+
+		int articleId = articleDAO.selectNextAticleId();
+		article.setArticleId(articleId);
+
+		articleDAO.insertArticle(article);
+
+		return article.getTitle();
 	}
+
+
+
+
 
 	public int modifyArticle(ArticleVO article){
 

@@ -5,9 +5,9 @@
 
 	<insert id="insertArticle" parameterType="com.hanbit.team01.core.vo.ArticleVO">
 		INSERT INTO ARTICLE
-			(ARTICLE_ID, TITLE, CONTENTS, CREATE_DT)
+			(ARTICLE_ID, TITLE, CONTENTS, CREATE_DT, ARTICLE_PROFILE)
 		VALUES
-			(#{ARTICLE_ID}, #{TITLE}, #{CONTENTS}, #{CREATE_DT})
+			(#{articleId}, #{title}, #{contents}, #{createDt}, #{profileFileId})
 	</insert>
 
 	<update id="updateArticle" parameterType="com.hanbit.team01.core.vo.ArticleVO">
@@ -33,6 +33,11 @@
 		SELECT ARTICLE_ID, TITLE, CONTENTS, CREATE_DT
 		FROM ARTICLE
 		WHERE ARTICLE_ID = #{articleId}
+	</select>
+
+	<select id="selectNextAticleId" resultType="int">
+		SELECT SEQ_ARTICLE.NEXTVAL
+		  FROM DUAL
 	</select>
 
 

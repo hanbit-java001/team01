@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.hanbit.team01.core.service.ArticleService;
 import com.hanbit.team01.core.service.FileService;
+import com.hanbit.team01.core.vo.ArticleVO;
 import com.hanbit.team01.core.vo.FileVO;
 
 @Controller
@@ -29,16 +31,17 @@ public class ArticleController {
 	@Autowired
 	private FileService fileService;
 
+	@RequestMapping("article/main")
+	public String mainView(){
+		return "article/main";
+	}
+
 	@RequestMapping("upload/uploadForm")
 	public String UploadForm(){
 
 		return "upload/uploadForm";
 	}
 
-	@RequestMapping("article/main")
-	public String mainView(){
-		return "article/main";
-	}
 	@RequestMapping("article/list")
 	public String contentsList(){
 		return "article/list";
@@ -69,6 +72,24 @@ public class ArticleController {
 			fileId = fileService.storeFile(fileVO);
 
 		}
+
+		try{
+			ArticleVO article = new ArticleVO();
+			article.setTitle(title);
+			article.setContents(contents);
+			article.setCreateDt(createDt);
+			article.setProfileFileId(fileId);
+
+			articleService.addArticle(article);
+		}
+		catch (Exception e){
+			if (StringUtils.isNotBlank(fileId)) {
+				fileService.remeveFile(fileId);
+			}
+
+			throw new RuntimeException(e.getMessage(), e);
+		}
+
 		Map result = new HashMap();
 		result.put("title", title);
 

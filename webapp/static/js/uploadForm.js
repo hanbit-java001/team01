@@ -1,4 +1,8 @@
 $(function(){
+	$(".btnCancle").on("click", function() {
+		location.href = "/article/main"
+	});
+
 	$(".btnApply").on("click", function() {
 		var title = $("#txtTitle").val().trim();
 		var contents = $("#txtContents").val().trim();
@@ -43,7 +47,8 @@ $(function(){
 
 			alert(title + " 등록 성공.");
 
-			location.href = "/";
+			location.href = "/article/main";
 		});
 	});
 });
+

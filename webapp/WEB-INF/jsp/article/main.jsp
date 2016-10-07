@@ -3,15 +3,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>블로그 아이디어</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/plugins/material/iconfont/material-icons.css">
+  <link rel="shortcut icon" href="/static/img/ico_checkmal.ico">
   <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
   <style>
 
   </style>
 </head>
+
+<header class="hanbit-header">
+		<div id="btnGroupMain">
+			<div id="btnMenu" class="hanbit-top-button">
+				<i class="material-icons hanbit-abs-center">menu</i>
+			</div>
+		</div>
+
+		<div id="btnGroupSub">
+			<div class="btnBack hanbit-top-button">
+				<i class="material-icons hanbit-abs-center">navigate_before</i>
+			</div>
+		</div>
+
+		<div id="btnGroupRight">
+			<div id="btnGroupCalendar">
+
+				<div id="btnAddSchedule" class="hanbit-top-button right">
+					<i class="material-icons hanbit-abs-center">add</i>
+				</div>
+			</div>
+
+			<div id="btnGroupUpdateSchedule">
+				<div class="btnApplySchedule hanbit-top-button right">
+					<i class="material-icons hanbit-abs-center">done</i>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
 <div class="container-fluid" style="background-color:#283593
@@ -19,7 +54,6 @@
   <div class="top-text">Blog Idea</div>
 </div>
 <br>
-
 <div class="container">
   <div class="row">
     <nav class="col-sm-3" id="myScrollspy">
@@ -71,6 +105,7 @@
 
   <script src="/static/plugins/jquery/jquery-3.1.0.min.js"></script>
   <script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/js/main.js"></script>
 </body>
 </html>
 

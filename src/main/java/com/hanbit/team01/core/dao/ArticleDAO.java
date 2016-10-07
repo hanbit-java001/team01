@@ -21,9 +21,10 @@ public class ArticleDAO {
 	private SqlSession sqlSession;
 
 	public int insertArticle(ArticleVO article) {
-		int result = sqlSession.insert("article.insertArticle", article);
 
-		return result;
+
+		return sqlSession.insert("article.insertArticle", article);
+
 	}
 
 	public int updateArticle(ArticleVO article) {
@@ -51,6 +52,10 @@ public class ArticleDAO {
 		ArticleVO article = sqlSession.selectOne("article.selectArticle",articleId);
 
 		return article;
+	}
+
+	public int selectNextAticleId() {
+		return sqlSession.selectOne("article.selectNextAticleId");
 	}
 
 
