@@ -64,37 +64,39 @@
         <li><a href="#y2013">2013</a></li>
         <li><a href="#y2012">2012</a></li>
         <li><a href="#y2011">2011</a></li>
-        <li><a href="#y2010">2010</a></li>
       </ul>
     </nav>
     <div class="col-sm-9">
       <div class="yearDetailFont" id="y2016">
+      <figure>
+      	<img alt="img20" src="/static/img/20.jpg" width="300" height="200">
+		<figcaption>
+		<div>
         <h1>2016</h1>
-        <p>상세보기</p>
+        <em>상세보기</em>
+        </div>
+        </figcaption>
+      </figure>
       </div>
       <div class="yearDetailFont" id="y2015">
         <h1>2015</h1>
-        <p>상세보기</p>
+        <em>상세보기</em>
       </div>
       <div class="yearDetailFont" id="y2014">
         <h1>2014</h1>
-        <p>상세보기</p>
+        <em>상세보기</em>
       </div>
       <div class="yearDetailFont" id="y2013">
         <h1>2013</h1>
-        <p>상세보기</p>
+        <em>상세보기</em>
       </div>
       <div class="yearDetailFont" id="y2012">
         <h1>2012</h1>
-        <p>상세보기</p>
+        <em>상세보기</em>
       </div>
       <div class="yearDetailFont" id="y2011">
         <h1>2011</h1>
-        <p>상세보기</p>
-      </div>
-      <div class="yearDetailFont" id="y2010">
-        <h1>2010</h1>
-        <p>상세보기</p>
+        <em>상세보기</em>
       </div>
     </div>
   </div>

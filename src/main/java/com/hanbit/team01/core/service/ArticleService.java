@@ -31,6 +31,10 @@ public class ArticleService {
 	}
 
 
+	public int removeArticle(String articleId){
+
+		return articleDAO.deleteArticle(articleId);
+	}
 
 
 
@@ -39,10 +43,6 @@ public class ArticleService {
 		return articleDAO.updateArticle(article);
 	}
 
-	public int removeArticle(String articleId){
-
-		return articleDAO.deleteArticle(articleId);
-	}
 
 	public List<ArticleVO> listArticles(String createDt){
 
