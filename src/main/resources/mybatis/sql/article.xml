@@ -7,7 +7,7 @@
 		INSERT INTO ARTICLE
 			(ARTICLE_ID, TITLE, CONTENTS, CREATE_DT, ARTICLE_PROFILE)
 		VALUES
-			(#{articleId}, #{title}, #{contents}, #{createDt}, #{profileFileId})
+			(#{articleId}, #{title}, #{contents}, #{createDt}, #{articleProfile})
 	</insert>
 
 	<update id="updateArticle" parameterType="com.hanbit.team01.core.vo.ArticleVO">

@@ -1,13 +1,46 @@
 $(function() {
+	var year = $(this).attr("year");
+
+
 	$("#btnAddSchedule").on("click", function() {
 		location.href = "/upload/uploadForm"
     });
 
 	$("#myScrollspy a").on("click", function() {
-		var year = $(this).attr("year");
 
 		getListArticles(year);
 	});
+	$("#y2016").on("click", function() {
+
+
+		location.href = "/article/list"
+	});
+	$("#y2015").on("click", function() {
+
+
+		location.href = "/article/list"
+	});
+	$("#y2014").on("click", function() {
+
+
+		location.href = "/article/list"
+	});
+	$("#y2013").on("click", function() {
+
+
+		location.href = "/article/list"
+	});
+	$("#y2012").on("click", function() {
+
+
+		location.href = "/article/list"
+	});
+	$("#y2011").on("click", function() {
+
+
+		location.href = "/article/list"
+	});
+
 
 	function getListArticles(createYear) {
 		jQuery.ajax({
