@@ -7,7 +7,7 @@ public class ArticleVO {
 	private String contents;
 	private String createDt;
 	private String updateDt;
-	private String profileFileId;
+	private String articleProfile;
 
 	public int getArticleId() {
 		return articleId;
@@ -39,11 +39,11 @@ public class ArticleVO {
 	public void setUpdateDt(String updateDt) {
 		this.updateDt = updateDt;
 	}
-	public String getProfileFileId() {
-		return profileFileId;
+	public String getArticleProfile() {
+		return articleProfile;
 	}
-	public void setProfileFileId(String profileFileId) {
-		this.profileFileId = profileFileId;
+	public void setArticleProfile(String articleProfile) {
+		this.articleProfile = articleProfile;
 	}
 
 

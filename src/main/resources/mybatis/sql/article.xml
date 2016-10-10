@@ -22,9 +22,10 @@
 
 	<select id="selectArticles" parameterType="map" resultType="com.hanbit.team01.core.vo.ArticleVO">
 	<![CDATA[
-		SELECT ROWNUM, ARTICLE_ID, TITLE, CREATE_DT
+		SELECT ARTICLE_ID, TITLE, CREATE_DT, ARTICLE_PROFILE
 		FROM ARTICLE
-		WHERE ROWNUM <= #{rows}
+		WHERE CREATE_DT <= #{createYear} || '-12-31'
+		  AND CREATE_DT >= #{createYear} || '-01-01'
 		ORDER BY CREATE_DT DESC
 	]]>
 	</select>

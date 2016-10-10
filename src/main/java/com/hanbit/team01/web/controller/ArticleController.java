@@ -2,6 +2,7 @@ package com.hanbit.team01.web.controller;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -78,7 +80,7 @@ public class ArticleController {
 			article.setTitle(title);
 			article.setContents(contents);
 			article.setCreateDt(createDt);
-			article.setProfileFileId(fileId);
+			article.setArticleProfile(fileId);
 
 			articleService.addArticle(article);
 		}
@@ -92,6 +94,14 @@ public class ArticleController {
 
 		Map result = new HashMap();
 		result.put("title", title);
+
+		return result;
+	}
+
+	@RequestMapping("/api/article/list")
+	@ResponseBody
+	public List<ArticleVO> listArticles(@RequestParam("createYear") String createYear){
+		List<ArticleVO> result = articleService.listArticles(createYear);
 
 		return result;
 	}

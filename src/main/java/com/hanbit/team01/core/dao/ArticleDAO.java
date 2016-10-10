@@ -39,9 +39,9 @@ public class ArticleDAO {
 		return result;
 	}
 
-	public List<ArticleVO> selectArticles(String createDt) {
+	public List<ArticleVO> selectArticles(String createYear) {
 		Map params = new HashMap();
-		params.put("createDt", createDt);
+		params.put("createYear", createYear);
 
 		List<ArticleVO> result = sqlSession.selectList("article.selectArticles",params);
 

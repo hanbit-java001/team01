@@ -23,12 +23,6 @@
 			</div>
 		</div>
 
-		<div id="btnGroupSub">
-			<div class="btnBack hanbit-top-button">
-				<i class="material-icons hanbit-abs-center">navigate_before</i>
-			</div>
-		</div>
-
 		<div id="btnGroupRight">
 			<div id="btnGroupCalendar">
 
@@ -57,50 +51,80 @@
   <div class="row">
     <nav class="col-sm-3" id="myScrollspy">
       <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-        <li><a href="#y2016">2016</a></li>
-        <li><a href="#y2015">2015</a></li>
-        <li><a href="#y2014">2014</a></li>
-        <li><a href="#y2013">2013</a></li>
-        <li><a href="#y2012">2012</a></li>
-        <li><a href="#y2011">2011</a></li>
+        <li><a href="#" year="2016">2016</a></li>
+        <li><a href="#" year="2015">2015</a></li>
+        <li><a href="#" year="2014">2014</a></li>
+        <li><a href="#" year="2013">2013</a></li>
+        <li><a href="#" year="2012">2012</a></li>
+        <li><a href="#" year="2011">2011</a></li>
       </ul>
     </nav>
     <div class="col-sm-9">
       <div class="yearDetailFont" id="y2016">
-      <table class="img" width=850 height=250 background="/static/img/11.jpg">
-        <tr>
-        <td>
-        2016<br>
-          상세보기
-        </td>
-        </tr>
-        </table>
+	      <table class="img" width=850 height=250 background="/static/img/11.jpg">
+		        <tr>
+			        <td>
+				        2016<br>
+				          상세보기
+			        </td>
+		        </tr>
+	       </table>
       </div>
       <div class="yearDetailFont" id="y2015">
-        <h1>2015</h1>
-        <em>상세보기</em>
+	      <table class="img" width=850 height=250 background="/static/img/12.jpg">
+		        <tr>
+			        <td>
+				        2015<br>
+				          상세보기
+			        </td>
+		        </tr>
+	       </table>
       </div>
       <div class="yearDetailFont" id="y2014">
-        <h1>2014</h1>
-        <em>상세보기</em>
+	      <table class="img" width=850 height=250 background="/static/img/13.jpg">
+		        <tr>
+			        <td>
+				        2014<br>
+				          상세보기
+			        </td>
+		        </tr>
+	       </table>
       </div>
       <div class="yearDetailFont" id="y2013">
-        <h1>2013</h1>
-        <em>상세보기</em>
+	      <table class="img" width=850 height=250 background="/static/img/14.jpg">
+		        <tr>
+			        <td>
+				        2013<br>
+				          상세보기
+			        </td>
+		        </tr>
+	       </table>
       </div>
       <div class="yearDetailFont" id="y2012">
-        <h1>2012</h1>
-        <em>상세보기</em>
+	      <table class="img" width=850 height=250 background="/static/img/15.jpg">
+		        <tr>
+			        <td>
+				        2012<br>
+				          상세보기
+			        </td>
+		        </tr>
+	       </table>
       </div>
       <div class="yearDetailFont" id="y2011">
-        <h1>2011</h1>
-        <em>상세보기</em>
+	      <table class="img" width=850 height=250 background="/static/img/16.jpg">
+		        <tr>
+			        <td>
+				        2011<br>
+				          상세보기
+			        </td>
+		        </tr>
+	       </table>
       </div>
     </div>
   </div>
 </div>
 <footer class="container-footer">
-  <div class="footer-text">COPYRIGHT ⒞ 2016 BY BOOTSTRAP.COM. ALL RIGHTS RESERVED. design by bootstrap.</div>
+  <div class="footer-text">COPYRIGHT ⒞ 2016 BY LEE.COM. ALL RIGHTS RESERVED. design by LEE.</div>
 </footer>
 
   <script src="/static/plugins/jquery/jquery-3.1.0.min.js"></script>

@@ -44,9 +44,10 @@ public class ArticleService {
 	}
 
 
-	public List<ArticleVO> listArticles(String createDt){
+	public List<ArticleVO> listArticles(String createYear){
 
-		return articleDAO.selectArticles(createDt);
+		return articleDAO.selectArticles(createYear);
+
 	}
 
 	public ArticleVO getArticle(String articleId){
