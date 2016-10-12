@@ -58,6 +58,14 @@ public class ArticleDAO {
 		return sqlSession.selectOne("article.selectNextAticleId");
 	}
 
+	public List<ArticleVO> selectArticles(int page) {
+		List<ArticleVO> articles = sqlSession.selectList("article.selectArticles", page);
 
+		return articles;
+	}
+
+	public int countArticles() {
+		return sqlSession.selectOne("article.countArticles");
+	}
 
 }

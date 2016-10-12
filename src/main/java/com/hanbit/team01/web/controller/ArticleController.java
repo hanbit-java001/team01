@@ -100,10 +100,16 @@ public class ArticleController {
 
 	@RequestMapping("/api/article/list")
 	@ResponseBody
-	public List<ArticleVO> listArticles(@RequestParam("createYear") String createYear){
-		List<ArticleVO> result = articleService.listArticles(createYear);
+	public Map<String, Object> listArticles(@RequestParam("page") int page){
+		Map<String, Object> pagingArticles = new HashMap<>();
 
-		return result;
+		List<ArticleVO> articles = articleService.getArticles(page);
+		int totalCount = articleService.getTotalArticles();
+
+		pagingArticles.put("totalCount", totalCount);
+		pagingArticles.put("articles", articles);
+
+		return pagingArticles;
 	}
 
 }

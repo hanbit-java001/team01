@@ -30,6 +30,11 @@
 	]]>
 	</select>
 
+	<select id="countArticles" resultType="int">
+  		SELECT COUNT(ARTICLE_ID)
+  		  FROM ARTICLE
+  	</select>
+
 	<select id="selectArticle" parameterType="string" resultType="com.hanbit.team01.core.vo.ArticleVO">
 		SELECT ARTICLE_ID, TITLE, CONTENTS, CREATE_DT
 		FROM ARTICLE
@@ -40,7 +45,6 @@
 		SELECT SEQ_ARTICLE.NEXTVAL
 		  FROM DUAL
 	</select>
-
 
 
 

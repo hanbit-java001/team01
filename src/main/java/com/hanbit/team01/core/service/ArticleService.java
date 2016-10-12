@@ -55,5 +55,18 @@ public class ArticleService {
 	}
 
 
+	public List<ArticleVO> getArticles(int page) {
+		List<ArticleVO> articles = articleDAO.selectArticles(page);
+
+		return articles;
+	}
+
+
+	public int getTotalArticles() {
+
+		return articleDAO.countArticles();
+	}
+
+
 
 }

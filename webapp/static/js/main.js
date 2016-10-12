@@ -12,7 +12,7 @@ $(function() {
 	});
 	$("#y2016").on("click", function() {
 
-
+		getListArticles();
 		location.href = "/article/list"
 	});
 	$("#y2015").on("click", function() {
@@ -53,7 +53,7 @@ $(function() {
 			for(var i = 0;i<result.length;i++){
 				var article = result[i];
 
-				$("#y" + article.title + " .img").attr("background", "/file/" + article.articleProfile);
+				$("#y" + article.createDt + " .img").attr("background", "/file/" + article.articleProfile);
 			}
 		}).fail(function() {
 			alert("사용자가 폭주하여 잠시 후 사용해주세요.");
